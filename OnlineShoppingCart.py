@@ -11,7 +11,7 @@ class ItemToPurchase:
     #Method to get items cost and print the output
     def print_item_cost(self):
         totalCost = self.price * self.quantity
-        print("{} {} @ ${} = ${}".format(self.name, self.quantity, self.price, int(totalCost)))
+        print("{} {} @ ${:.0f} = ${}".format(self.name, self.quantity, self.price, int(totalCost)))
 
 #Prompt user for two items and create two objects of the ItemToPurchase class
 item1 = ItemToPurchase()
